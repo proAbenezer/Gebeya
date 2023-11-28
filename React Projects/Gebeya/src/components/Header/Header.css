@@ -1,0 +1,67 @@
+/* ===Header styles==== */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+  transition: 0.5;
+  z-index: 10;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__left--title {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header .header__left--icon {
+  cursor: pointer;
+}
+.header__left--title {
+  margin-left: 10px;
+}
+.nav__links--list {
+  display: flex;
+  align-items: center;
+}
+.nav__li {
+  list-style: none;
+  margin-right: 20px;
+}
+.nav__li a,
+.nav__li a .nav__cart--icon {
+  text-decoration: none;
+  font-family: inherit;
+  color: #222;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.header.scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.nav__signUp--button {
+  color: #fff;
+  outline: none;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: #d80032;
+  color: D80032;
+  border: 1px solid #d80030;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.nav__signUp--button:hover,
+.nav__signUp--button:focus {
+  transform: scale(1.2);
+  background-color: #e50036;
+}
